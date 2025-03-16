@@ -1,0 +1,6 @@
+def is_palindrome(s):
+    # Convert the string to lowercase and remove spaces or special characters if needed
+    s = ''.join(e for e in s if e.isalnum()).lower()
+    
+    # Check if the string is equal to its reverse
+    return s == s[::-1]
