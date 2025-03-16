@@ -1,0 +1,10 @@
+print('##  Program Python Konversi Suhu  ##')
+
+# Input suhu dalam Fahrenheit
+fahr = float(input('Input suhu Fahrenheit: '))
+
+# Konversi ke Celsius
+celc = (fahr - 32) * 5 / 9
+
+# Output hasil konversi
+print(f"{fahr} derajat Fahrenheit = {celc:.2f} derajat Celsius")
