@@ -1,0 +1,11 @@
+def remove_first_occurrence(main_string, search_string):
+    # Find the position of the first occurrence of search_string
+    pos = main_string.find(search_string)
+
+    # If the search_string is found in the main_string
+    if pos != -1:
+        # Remove the search_string by slicing the main_string
+        return main_string[:pos] + main_string[pos + len(search_string):]
+    else:
+        # If the search_string is not found, return the original main_string
+        return main_string
